@@ -7,12 +7,12 @@ const RightSection = () => {
     <Container className='relative z-10 lg:h-auto'>
       <div className='relative flex translate-y-10 flex-col items-start text-left lg:translate-y-1/2'>
         <div className='w-full lg:w-[541px]'>
-          <p className='font-manrope text-center text-[25px] leading-[60px] font-extrabold text-[#007DFC] lg:text-justify lg:text-[50px]'>
+          <p className='font-manrope text-center text-[25px] leading-[60px] font-extrabold text-[#007DFC] lg:text-left lg:text-[50px]'>
             Reviews Management System
           </p>
         </div>
         <div className='mt-2 w-full lg:mt-4 lg:w-[511px]'>
-          <p className='font-quicksand text-center text-[16px] leading-[33.75px] font-semibold text-[#000000B2] lg:text-justify lg:text-[27px]'>
+          <p className='font-quicksand text-center text-[16px] leading-[33.75px] font-semibold text-[#000000B2] lg:text-left lg:text-[27px]'>
             Empower Your Business with Authentic Customer Feedback
           </p>
         </div>

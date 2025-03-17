@@ -1,13 +1,9 @@
 'use client';
+import { PageLayoutQueryProps } from '@/common/types/common';
 import { cn } from '@/common/utils/cn';
-import { ReactNode } from 'react';
-import Header from './header/Header';
 import Footer from './footer/Footer';
+import Header from './header/Header';
 
-type PageLayoutQueryProps = {
-  children: ReactNode;
-  className?: string;
-};
 const MainLayout = ({ children, className }: PageLayoutQueryProps) => {
   return (
     <main className=''>
@@ -18,7 +14,7 @@ const MainLayout = ({ children, className }: PageLayoutQueryProps) => {
         )}
       >
         <Header />
-        <div className='h-dvh w-dvw'>{children}</div>
+        <div className=''>{children}</div>
         <Footer />
       </div>
     </main>

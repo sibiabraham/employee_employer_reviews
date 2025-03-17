@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import '@/app/styles/globals.css';
-import MainLayout from '@/common/components/layouts/MainLayout';
+import AuthLayout from '@/common/components/layouts/AuthLayout';
 import { ThemeProvider } from '@/common/context/theme-provider/theme-provider';
-import { quicksand, manrope } from '@/common/fonts';
+import { manrope, quicksand } from '@/common/fonts';
 
 export const metadata: Metadata = {
   title: 'Employee Employer Review',
@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${quicksand.variable} ${manrope.variable} antialiased`}>
         <ThemeProvider>
-          <MainLayout>{children}</MainLayout>
+          <AuthLayout>{children}</AuthLayout>
         </ThemeProvider>
       </body>
     </html>
