@@ -5,7 +5,13 @@ import { usePathname } from 'next/navigation';
 
 const AuthLayout = ({ children, className }: PageLayoutQueryProps) => {
   const pathname = usePathname();
-  const mainPages = ['/login', '/register'];
+  const mainPages = [
+    '/login',
+    '/register',
+    '/register-company',
+    '/forgot-password',
+    '/reset-password',
+  ];
   const isMainPage = mainPages.includes(pathname);
 
   return (

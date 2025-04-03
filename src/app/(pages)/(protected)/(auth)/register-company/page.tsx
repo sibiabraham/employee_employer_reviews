@@ -1,12 +1,12 @@
 import AuthWithSidebar from '@/common/components/authwithsidebar/AuthWithSidebar';
-import RegisterForm from './_components/RegisterForm';
+import RegisterCompanyForm from './_components/RegisterCompanyForm';
 
 const page = () => {
   return (
     <AuthWithSidebar>
       <div className='relative p-6 xl:px-[58px] xl:pt-[77px]'>
         <div className='w-full'>
-          <RegisterForm />
+          <RegisterCompanyForm />
         </div>
       </div>
     </AuthWithSidebar>

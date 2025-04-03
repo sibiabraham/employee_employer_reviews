@@ -1,14 +1,14 @@
 import AuthWithSidebar from '@/common/components/authwithsidebar/AuthWithSidebar';
-import LoginForm from './_components/LoginForm';
+import React from 'react';
 
-export default function Login() {
+const page = () => {
   return (
     <AuthWithSidebar>
       <div className='relative p-6 xl:px-[58px] xl:pt-[220px]'>
-        <div className='w-full'>
-          <LoginForm />
-        </div>
+        <div className='w-full'>Reset Password</div>
       </div>
     </AuthWithSidebar>
   );
-}
+};
+
+export default page;

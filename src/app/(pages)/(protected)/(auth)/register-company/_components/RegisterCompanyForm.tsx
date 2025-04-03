@@ -4,11 +4,11 @@ import Button from '@/common/components/button/Button';
 import InputFields from '@/common/components/inputfields/InputFields';
 import Link from 'next/link';
 
-const RegisterForm = () => {
+const RegisterCompanyForm = () => {
   return (
     <>
       <div className='font-manrope text-[33px] font-bold'>
-        <span>Register !</span>
+        <span>Register Company !</span>
       </div>
       <div className='font-manrope pt-1.5 text-[20px] font-medium text-black/70'>
         <span>
@@ -18,18 +18,11 @@ const RegisterForm = () => {
       {/* <FormProvider> */}
       <form className='grid grid-cols-1 gap-4 md:grid-cols-2'>
         <InputFields
-          field='firstName'
-          label='First Name'
+          field='companyName'
+          label='Company Name'
           type='text'
           required
-          placeholder='Enter First Name'
-        />
-        <InputFields
-          field='lastName'
-          label='Last Name'
-          type='text'
-          required
-          placeholder='Enter Last Name'
+          placeholder='Enter Company Name'
         />
         <InputFields
           field='email'
@@ -91,4 +84,4 @@ const RegisterForm = () => {
   );
 };
 
-export default RegisterForm;
+export default RegisterCompanyForm;
